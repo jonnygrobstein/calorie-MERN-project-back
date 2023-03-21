@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "MERN Project backend with Jose Padilla, Nathen Leonard, Sharnell Graham, and Jonny Grobstein",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
