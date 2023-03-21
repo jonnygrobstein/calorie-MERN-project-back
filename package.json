@@ -1,0 +1,14 @@
+{
+  "name": "calorie-mern-project-back",
+  "version": "1.0.0",
+  "description": "MERN Project backend with Jose Padilla, Nathen Leonard, Sharnell Graham, and Jonny Grobstein",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
