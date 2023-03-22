@@ -1,8 +1,9 @@
-import Food from '../models/Food'
-import Meals from '../models/MealPlans'
+import mongoose from './connection.js'
+import Food from '../models/Food.js'
+// import Meals from '../models/MealPlans.js'
 import testFood from './testfood.json' assert { type: 'json' }
 
-Food.remove({})
+// Food.remove({})
 
 Food.collection.insert(testFood)
     .then(test => {
