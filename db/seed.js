@@ -3,9 +3,9 @@ import Food from '../models/Food.js'
 // import Meals from '../models/MealPlans.js'
 import testFood from './testfood.json' assert { type: 'json' }
 
-// Food.remove({})
+Food.deleteMany({})
 
-Food.collection.insert(testFood)
+Food.insertMany(testFood)
     .then(test => {
         console.log(testFood)
     })
