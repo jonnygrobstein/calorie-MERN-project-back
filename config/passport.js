@@ -12,7 +12,7 @@ const params = {
   jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
 };
 
-export function passportFunc () {
+export function passportFunc() {
   let strategy = new Strategy(params, (payload, callback) => {
     let user = User.findById(payload.id) || null;
     if (user) {
@@ -32,4 +32,4 @@ export function passportFunc () {
       return passport.authenticate("jwt", { session: false });
     },
   };
-};
+}
