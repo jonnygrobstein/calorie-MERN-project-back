@@ -1,7 +1,7 @@
 import express from "express";
 import jwt from "jwt-simple";
-import passport from "../config/passport.js";
-import config from "../config/config.js"
+import { passportFunc } from "../config/passport.js";
+import { jwtSecret, jwtSession } from "../config/config.js";
 import User from "../models/User.js"
 
 const router = express.Router();
@@ -21,7 +21,7 @@ router.post('/signup', (req,res) => {
                         var payload = {
                             id: newUser.id
                         }
-                        var token = jwt.encode(payload, config.jwtSecret)
+                        var token = jwt.encode(payload, jwtSecret)
                         res.json({
                             token: token
                         })

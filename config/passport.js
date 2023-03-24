@@ -1,6 +1,6 @@
 import passport from "passport";
 import passportJWT, { ExtractJwt } from "passport-jwt";
-import config from "./config.js";
+import { jwtSecret, jwtSession } from "../config/config.js";
 import mongoose from "../db/connection.js";
 import User from "../models/User.js";
 
@@ -8,11 +8,11 @@ const ExtractJWT = passportJWT.ExtractJwt;
 const Strategy = passportJWT.Strategy;
 
 const params = {
-  secretOrKey: config.jwtSecret,
+  secretOrKey: jwtSecret,
   jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
 };
 
-module.exports = function () {
+export function passportFunc () {
   let strategy = new Strategy(params, (payload, callback) => {
     let user = User.findById(payload.id) || null;
     if (user) {
