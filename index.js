@@ -5,11 +5,11 @@ const app = express();
 /* import router from "./routes/index.js"; */
 
 const passport = passportFunc()
+app.use(express.json());
 
 app.use(passport.initialize());
 app.use('/users', userController);
 
-app.use(express.json());
 /* app.use(router); */
 
 app.listen(4000, () => console.log("I hear you sneaking around on Port 3000"));

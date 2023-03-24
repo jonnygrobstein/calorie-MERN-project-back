@@ -26,11 +26,16 @@ router.post('/signup', (req,res) => {
                             token: token
                         })
                     } else {
+                        console.log("User creation failed:", err.message);
                         res.sendStatus(401)
                     }
                 })
+                .catch(err => {
+                    console.log("User creation failed:", err.message);
+                    res.sendStatus(401);
+                });
             } else {
-                res.sendStatus(401)
+                res.sendStatus(409)
             }
         })
     } else {
