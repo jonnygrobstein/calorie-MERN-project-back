@@ -1,8 +1,8 @@
-import express from "express"
-import foodController from "../controllers/foodController.js"
+import express from "express";
+import foodController from "../controllers/foodController.js";
 
-const foodRouter = express.Router()
+const foodRouter = express.Router();
 
-foodRouter.get("/", foodController.index)
+foodRouter.get("/", foodController.index);
 
-export default foodRouter
+export default foodRouter;
