@@ -2,9 +2,11 @@ import mongoose from "../db/connection.js";
 const Schema = mongoose.Schema
 
 const Food = new Schema({
-    food_id: String,
-    serving_id: String,
-    food_entry_id: String,
+    food_name: String,
+    serving_size: String,
+    serving_measure: String,
+    serving_description: String,
+    food_quantity: String,
     dateint: Number, 
     food_type: String,
     brand_type: String,
@@ -13,7 +15,6 @@ const Food = new Schema({
     carbohydrate: String,
     fiber: String,
     sugar: String,
-    added_sugars: String,
     protein: String,
     fat: String,
     saturated_fat: String,
