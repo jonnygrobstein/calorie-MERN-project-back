@@ -4,7 +4,6 @@ import { passportFunc } from "../config/passport.js";
 import { jwtSecret, jwtSession } from "../config/config.js";
 import User from "../models/User.js";
 
-
 const usersController = {
   signup: (req, res) => {
     if (req.body.email && req.body.password) {
@@ -39,6 +38,32 @@ const usersController = {
         }
       });
     } else {
+      res.sendStatus(401);
+    }
+  },
+  login: (req, res) => {
+    if (req.body.email && req.body.password) {
+      User.findOne({ email: req.body.email }).then((user) => {
+        if (user) {
+          if (user.password === req.body.password) {
+            var payload = {
+              id: user.id,
+            };
+            var token = jwt.encode(payload, config.jwtSecret);
+            res.json({
+              token: token,
+            });
+          } else {
+            console.log("Wrong credentials");
+            res.sendStatus(401);
+          }
+        } else {
+          console.log("User does not exist");
+          res.sendStatus(401);
+        }
+      });
+    } else {
+      console.log("post failure");
       res.sendStatus(401);
     }
   },
