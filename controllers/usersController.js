@@ -4,6 +4,7 @@ import { passportFunc } from "../config/passport.js";
 import { jwtSecret, jwtSession } from "../config/config.js";
 import User from "../models/User.js";
 
+
 const usersController = {
   signup: (req, res) => {
     if (req.body.email && req.body.password) {
