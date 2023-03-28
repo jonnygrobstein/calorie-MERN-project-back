@@ -1,12 +1,14 @@
 import { passportFunc } from "./config/passport.js";
 import express from "express";
 import router from "./routes/index.js";
+import cors from "cors";
 
 const app = express();
 const passport = passportFunc();
 
 app.use(express.json());
 app.use(passport.initialize());
+app.use(cors());
 
 app.use("/", router);
 
