@@ -7,6 +7,15 @@ const foodController = {
         res.json(food);
     });
   },
+  findFood: (req, res) => {
+    Food.find({food_name: req.query.food})
+    .then((food) => {
+      res.json(food)
+    })
+    .catch((error) => {
+      console.log(error)
+    })
+  },
   create: async(req, res) => {
     console.log(req.body)
     const food = await Food.create(req.body)

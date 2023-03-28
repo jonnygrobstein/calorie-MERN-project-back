@@ -49,7 +49,7 @@ const usersController = {
             var payload = {
               id: user.id,
             };
-            var token = jwt.encode(payload, config.jwtSecret);
+            var token = jwt.encode(payload, jwtSecret);
             res.json({
               token: token,
             });
