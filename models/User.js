@@ -1,7 +1,7 @@
 import mongoose from "../db/connection.js";
 import Meals from "./MealPlans"
 
-const Schema = mongoose.Schema
+const Schema = mongoose.Schema;
 
 const User = new Schema({
     username: { type: String, required: true, unique: true },
@@ -14,4 +14,5 @@ const User = new Schema({
     user_mealPlans: [{ type: Schema.Types.ObjectId, ref: `Meals` }]  
 })
 
-export default mongoose.model('User', User)
+
+export default mongoose.model("User", User);

@@ -41,5 +41,31 @@ const usersController = {
       res.sendStatus(401);
     }
   },
+  login: (req, res) => {
+    if (req.body.email && req.body.password) {
+      User.findOne({ email: req.body.email }).then((user) => {
+        if (user) {
+          if (user.password === req.body.password) {
+            var payload = {
+              id: user.id,
+            };
+            var token = jwt.encode(payload, jwtSecret);
+            res.json({
+              token: token,
+            });
+          } else {
+            console.log("Wrong credentials");
+            res.sendStatus(401);
+          }
+        } else {
+          console.log("User does not exist");
+          res.sendStatus(401);
+        }
+      });
+    } else {
+      console.log("post failure");
+      res.sendStatus(401);
+    }
+  },
 };
 export default usersController;
