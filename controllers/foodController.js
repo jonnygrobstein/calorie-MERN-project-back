@@ -7,7 +7,7 @@ const foodController = {
     });
   },
   findFood: (req, res) => {
-    const searchedFood = new RegExp(".*" + req.query.food + ".*");
+    const searchedFood = new RegExp(".*" + req.query.food + ".*", 'i');
 
     Food.find({ food_name: searchedFood })
       .then((food) => {
