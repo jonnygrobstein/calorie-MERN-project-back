@@ -17,6 +17,15 @@ const foodController = {
         console.log(error);
       });
   },
+  findFoodById: (req, res) => {
+    Food.findById(req.params.id)
+    .then((food) => {
+      res.json(food)
+    })
+    .catch((error) => {
+      console.log(error)
+    })
+  },
   create: async (req, res) => {
     console.log(req.body);
     const food = await Food.create(req.body);

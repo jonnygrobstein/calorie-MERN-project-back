@@ -10,6 +10,8 @@ const usersController = {
       let newUser = {
         email: req.body.email,
         password: req.body.password,
+        user_firstname: req.body.user_firstname,
+        user_lastname: req.body.user_lastname,
       };
       User.findOne({ email: req.body.email }).then((user) => {
         if (!user) {
