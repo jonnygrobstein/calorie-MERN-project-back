@@ -17,21 +17,15 @@ const foodController = {
         console.log(error);
       });
   },
-  
-  findSingle: (req, res) => {
+  findFoodById: (req, res) => {
     Food.findById(req.params.id)
-      .then((food) => {
-        if (!food) {
-          return res.status(404).json({ error: 'Food not found' });
-        }
-        res.json(food);
-      })
-      .catch((error) => {
-        console.log(error);
-        res.status(500).json({ error: 'Server error' });
-      });
+    .then((food) => {
+      res.json(food)
+    })
+    .catch((error) => {
+      console.log(error)
+    })
   },
-  
   create: async (req, res) => {
     console.log(req.body);
     const food = await Food.create(req.body);
