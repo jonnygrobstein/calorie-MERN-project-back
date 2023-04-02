@@ -5,7 +5,7 @@ import userRouter from "./Users.js";
 
 const router = express.Router();
 
-router.use("/" , (req,res) => res.send("hello world"))
+router.use("/" ,foodRouter)
 
 router.use("/foods", foodRouter);
 
