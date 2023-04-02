@@ -35,18 +35,32 @@ mongoose.connect('mongodb://localhost/calories', { useNewUrlParser: true, useUni
 ```
 Then you can run the following code in your Terminal:
 ```
-_node seed.js_
+node seed.js
 ```
 
 Once the database is seeded with data you can test by utilizing Postman (or another tool of your choosing)
 
 API Endpoints
 ------
-All our database queries start from /calories to access the data.  
+All our database queries start from **/calories** to access the data.  
 
 #### Our Endpoints 
 ##### Foods /foods
+```javascript
+foodRouter.get("/", foodController.index);
 
+foodRouter.get("/searchFood/", foodController.findFood);
+
+foodRouter.get("/:id", foodController.findFoodById)
+
+foodRouter.post("/addFood", foodController.create);
+
+foodRouter.put("/:id", foodController.edit);
+
+foodRouter.put("/updateFood/:food_name", foodController.updateFood)
+
+foodRouter.delete("/:id", foodRouter.delete);
+```
 ##### Meals /meals
 
 ##### Users /users
