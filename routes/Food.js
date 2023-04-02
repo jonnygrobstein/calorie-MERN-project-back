@@ -13,7 +13,7 @@ foodRouter.post("/addFood", foodController.create);
 
 foodRouter.put("/:id", foodController.edit);
 
-foodRouter.put("/updateFood/", foodController.updateFood)
+foodRouter.put("/updateFood/:food_name", foodController.updateFood)
 
 foodRouter.delete("/:id", foodRouter.delete);
 

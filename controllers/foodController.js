@@ -46,7 +46,8 @@ const foodController = {
     });
   },
   updateFood: (req, res) => {
-    Food.findOneAndUpdate({food_name: req.params.food_name})
+    console.log(req.params)
+    Food.findOneAndUpdate({food_name: req.params.food_name}, req.body)
     .then((food) => res.json(food))
   }
 };
