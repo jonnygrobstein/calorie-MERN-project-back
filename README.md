@@ -40,6 +40,16 @@ _node seed.js_
 
 Once the database is seeded with data you can test by utilizing Postman (or another tool of your choosing)
 
+API Endpoints
+------
+All our database queries start from /calories to access the data.  
+
+#### Our Endpoints 
+##### Foods /foods
+
+##### Meals /meals
+
+##### Users /users
 
 Challenges to building the backend
 ------
@@ -53,8 +63,11 @@ From figuring out how to connect the two sides using authentication, to how use 
 Credits
 ------
 Jonny Grobstein - [GitHub](https://github.com/jonnygrobstein) [LinkedIn](https://www.linkedin.com/in/jonnygrobstein/)
+
 Jose Padilla - [GitHub](https://github.com/JpadillaCoding) (https://www.linkedin.com/in/jose-padilla-978ab5146/)
+
 Nate Leonard - [GitHub](https://github.com/nateleo91) (https://www.linkedin.com/in/nathen-leonard/)
+
 Sharnell Graham - [GitHub](https://github.com/SharnellGraham) (https://www.linkedin.com/in/sharnell-graham-627932262/)
 
 
