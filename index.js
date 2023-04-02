@@ -1,4 +1,5 @@
 import { passportFunc } from "./config/passport.js";
+import * as dotenv from 'dotenv';
 import express from "express";
 import router from "./routes/index.js";
 import cors from "cors";
@@ -6,6 +7,8 @@ import cors from "cors";
 const app = express();
 const PORT = 4000
 const passport = passportFunc();
+
+dotenv.config()
 
 app.use(express.json());
 const corsOptions ={
