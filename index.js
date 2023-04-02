@@ -19,5 +19,5 @@ app.use(cors());
 
 app.use("/", router);
 
-app.listen(4000, () => console.log("I hear you sneaking around on Port 4000"));
+app.listen( process.env.PORT ||4000, () => console.log("I hear you sneaking around on Port 4000"));
 //changed to 4000 from 3000
