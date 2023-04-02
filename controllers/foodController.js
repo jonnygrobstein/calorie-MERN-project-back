@@ -45,6 +45,10 @@ const foodController = {
       res.json(food);
     });
   },
+  updateFood: (req, res) => {
+    Food.findOneAndUpdate({food_name: req.params.food_name})
+    .then((food) => res.json(food))
+  }
 };
 
 export default foodController;
