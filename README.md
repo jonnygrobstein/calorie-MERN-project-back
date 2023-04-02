@@ -64,11 +64,11 @@ Credits
 ------
 Jonny Grobstein - [GitHub](https://github.com/jonnygrobstein) [LinkedIn](https://www.linkedin.com/in/jonnygrobstein/)
 
-Jose Padilla - [GitHub](https://github.com/JpadillaCoding) (https://www.linkedin.com/in/jose-padilla-978ab5146/)
+Jose Padilla - [GitHub](https://github.com/JpadillaCoding) [LinkedIn](https://www.linkedin.com/in/jose-padilla-978ab5146/)
 
-Nate Leonard - [GitHub](https://github.com/nateleo91) (https://www.linkedin.com/in/nathen-leonard/)
+Nate Leonard - [GitHub](https://github.com/nateleo91) [LinkedIn](https://www.linkedin.com/in/nathen-leonard/)
 
-Sharnell Graham - [GitHub](https://github.com/SharnellGraham) (https://www.linkedin.com/in/sharnell-graham-627932262/)
+Sharnell Graham - [GitHub](https://github.com/SharnellGraham) [LinkedIn](https://www.linkedin.com/in/sharnell-graham-627932262/)
 
 
 Ideas for upcoming feature enhancements
