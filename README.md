@@ -62,9 +62,15 @@ foodRouter.put("/updateFood/:food_name", foodController.updateFood)
 foodRouter.delete("/:id", foodRouter.delete);
 ```
 ##### Meals /meals
-
+```javascript
+mealRouter.get("/", mealsController.index)
+```
 ##### Users /users
+```javascript
+userRouter.post("/signup", usersController.signup);
 
+userRouter.post("/login", usersController.login);
+```
 Challenges to building the backend
 ------
 The initial challenges were finding good data.  The initial build went smooth to get it up and usable, however, finding clean data, or data that we could clean up, was more challenging.  Once that was done, we were able to start really working on the project.
@@ -76,13 +82,15 @@ From figuring out how to connect the two sides using authentication, to how use 
 
 Credits
 ------
-Jonny Grobstein - [GitHub](https://github.com/jonnygrobstein) [LinkedIn](https://www.linkedin.com/in/jonnygrobstein/)
+CalorieTrakr was developed by the following contributors:
 
-Jose Padilla - [GitHub](https://github.com/JpadillaCoding) [LinkedIn](https://www.linkedin.com/in/jose-padilla-978ab5146/)
+  * Jonny Grobstein - [GitHub](https://github.com/jonnygrobstein) [LinkedIn](https://www.linkedin.com/in/jonnygrobstein/)
 
-Nate Leonard - [GitHub](https://github.com/nateleo91) [LinkedIn](https://www.linkedin.com/in/nathen-leonard/)
+  * Jose Padilla - [GitHub](https://github.com/JpadillaCoding) [LinkedIn](https://www.linkedin.com/in/jose-padilla-978ab5146/)
 
-Sharnell Graham - [GitHub](https://github.com/SharnellGraham) [LinkedIn](https://www.linkedin.com/in/sharnell-graham-627932262/)
+  * Nate Leonard - [GitHub](https://github.com/nateleo91) [LinkedIn](https://www.linkedin.com/in/nathen-leonard/)
+
+  * Sharnell Graham - [GitHub](https://github.com/SharnellGraham) [LinkedIn](https://www.linkedin.com/in/sharnell-graham-627932262/)
 
 
 Ideas for upcoming feature enhancements
