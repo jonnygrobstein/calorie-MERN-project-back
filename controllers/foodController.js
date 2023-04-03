@@ -41,9 +41,10 @@ const foodController = {
     });
   },
   delete: (req, res) => {
-    Food.findOneAndRemove({ _id: req.params.id }).then((food) => {
-      res.json(food);
-    });
+    Food.findByIdAndDelete(req.params.id)
+    .then(food => {
+      res.json(food)
+    })
   },
   updateFood: (req, res) => {
     console.log(req.params)

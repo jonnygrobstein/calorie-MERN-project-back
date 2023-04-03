@@ -15,6 +15,6 @@ foodRouter.put("/:id", foodController.edit);
 
 foodRouter.put("/updateFood/:food_name", foodController.updateFood)
 
-foodRouter.delete("/:id", foodRouter.delete);
+foodRouter.delete("/:id", foodController.delete);
 
 export default foodRouter;
