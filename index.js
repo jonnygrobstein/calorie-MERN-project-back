@@ -14,7 +14,7 @@ app.use(express.json());
 const corsOptions ={
     origin:/* 'http://localhost:3000' */ 'https://aesthetic-raindrop-2c9eee.netlify.app', 
     credentials:true,
-    optionSuccessStatus:200
+    optionSuccessStatus:200,
 }
 
 app.use(cors(corsOptions));

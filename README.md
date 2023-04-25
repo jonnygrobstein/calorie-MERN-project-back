@@ -1,18 +1,20 @@
 CalorieTrakr - Backend
 ======
 This is the backend, developed in Node.js and MongoDB for our CalorieTrakr program.
+Check out the front-end repo [HERE](https://github.com/JpadillaCoding/Front-end-MERN-Project)
+Check out the deployed app: [CalorieTrakr](https://aesthetic-raindrop-2c9eee.netlify.app/)
 
 Description
 ------
 This backend was developed for a group project at General Assembly.  We decided to build a Calorie Tracking App where you could search for calories in food, add food to the database, and save foods that you ate into a food diary.
 
-This includes creating login capability and front end to backend authentication and authorization.  
+This includes creating login capability and front-end to back-end authentication and authorization.  
 
-The backend was setup utilizing an outside data repository of food nutritional facts that was available and converted into JSON.  This was then imported into the database and used going forward.
+The backend was set up utilizing an outside data repository of food nutritional facts that were available and converted into JSON.  This was then imported into the database and used going forward.
 
 How to Install and Run This
 ------
-Upon forking and cloning this repository you will need to install dependencies.  You can do this by navigating into the top level folder, and running your install commands in your Terminal.  We used NPM so our command is
+Upon forking and cloning this repository you will need to install dependencies.  You can do this by navigating into the top level folder and running your install commands in your Terminal.  We used NPM so our command is
 _npm install_.
 
 The dependencies for our project can be seen below, with the versions used.
@@ -73,11 +75,11 @@ userRouter.post("/login", usersController.login);
 ```
 Challenges to building the backend
 ------
-The initial challenges were finding good data.  The initial build went smooth to get it up and usable, however, finding clean data, or data that we could clean up, was more challenging.  Once that was done, we were able to start really working on the project.
+The initial challenges were finding good data.  The initial build went smoothly to get it up and usable, however, finding clean data, or data that we could clean up, was more challenging.  Once that was done, we were able to start really working on the project.
 
-As this is our first project where we truly had to integrate the frontend with the backend via API we had some growing pains.  
+As this is our first project where we truly had to integrate the front-end with the backend via API we had some growing pains.  
 
-From figuring out how to connect the two sides using authentication, to how use data on the frontend, that was received from the backend, and then, once done with it, send it back to the database was challenging.  This, considering the scope of our project, was probably one of the most challenging and ongoing pieces to the backend.
+From figuring out how to connect the two sides using authentication, to how use data on the front-end, that was received from the backend, and then, once done with it, send it back to the database was challenging.  This, considering the scope of our project, was probably one of the most challenging and ongoing pieces to the backend.
 
 
 Credits
