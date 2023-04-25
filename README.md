@@ -1,7 +1,9 @@
 CalorieTrakr - Backend
 ======
 This is the backend, developed in Node.js and MongoDB for our CalorieTrakr program.
+
 Check out the front-end repo [HERE](https://github.com/JpadillaCoding/Front-end-MERN-Project)
+
 Check out the deployed app: [CalorieTrakr](https://aesthetic-raindrop-2c9eee.netlify.app/)
 
 Description
